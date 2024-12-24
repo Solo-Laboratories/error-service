@@ -1,0 +1,5 @@
+apiVersion: v2
+name: error-service
+description: Error Service deployment for routing custom error webpages for Sololabs.
+version: 0.0.1
+appVersion: "0.0.1"
