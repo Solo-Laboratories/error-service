@@ -1,0 +1,11 @@
+image:
+  repository: sololaboratories/error-service
+  tag: 0.0.1
+
+deployment:
+  name: error-service
+  replicas: 1
+
+container:
+  name: error-service-container
+  port: 8080

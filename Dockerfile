@@ -14,7 +14,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o error-service .
 FROM scratch
 
 # Copy the built application from the first stage
-COPY --from=build-stage /app/pages /pages
+COPY --from=build-stage /app/static /static
 COPY --from=build-stage /app/error-service /error-service
 
 # Set the entrypoint to the executable
