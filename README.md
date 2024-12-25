@@ -1,2 +1,2 @@
 # Error Service
-Custom Error webpages for Sololab's cluster
+Custom Error webpages for a Kubernete's cluster
