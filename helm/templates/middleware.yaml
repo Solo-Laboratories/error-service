@@ -1,0 +1,13 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: custom-errors-redirect
+  namespace: {{ .Release.Namespace }}
+spec:
+  errors:
+    status:
+      - "404"
+    query: /{status}.html
+    service:
+      name: {{ .Values.deployment.name }}-svc
+      port: {{ .Values.container.port }}
