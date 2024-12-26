@@ -1,6 +1,6 @@
 image:
   repository: sololaboratories/error-service
-  tag: 0.0.1
+  tag: 0.0.2
 
 deployment:
   name: error-service
